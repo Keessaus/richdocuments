@@ -610,6 +610,7 @@ $(document).ready(function() {
 
 	if (shouldAskForGuestName()) {
 		PostMessages.sendPostMessage('parent', 'loading')
+		PostMessages.sendPostMessage('parent', 'NC_ShowNamePicker')
 		$('#documents-content').guestNamePicker()
 	} else {
 		documentsMain.initSession()
